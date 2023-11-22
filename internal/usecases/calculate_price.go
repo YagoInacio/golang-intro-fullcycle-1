@@ -3,9 +3,9 @@ package usecases
 import "github.com/yagoinacio/golang-intro-fullcycle-1/internal/entities"
 
 type OrderInput struct {
-	ID    string
-	Price float64
-	Tax   float64
+	ID    string  `json:"id"`
+	Price float64 `json:"price"`
+	Tax   float64 `json:"tax"`
 }
 
 type OrderOutput struct {
